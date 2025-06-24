@@ -217,7 +217,6 @@ body {
     right: 0;
     width: 100%;
     height: 100%;
-    background: url('../images/background4') no-repeat left center/cover;
     z-index: 1;
     opacity: 0.9;
 }
@@ -400,6 +399,15 @@ body {
 
 /* ===== SECONDARY NAVIGATION BAR ===== */
 
+
+/*Utilizando links dentro de la misma pagina... */
+
+* {
+    scroll-behavior: smooth;
+}
+
+
+/*Navigation bar creada*/
 .ms-secondary-nav {
     padding-left: 275px;
     padding-right: 265px;
@@ -512,7 +520,7 @@ body {
 
 /* ===== HOW IT WORKS SECTION ===== */
 .ms-how-it-works {
-    padding: 0px 0;
+    padding: 50px 0;
     background-color: var(--ms-white);
     max-width: 1355px;      
     margin: 0 auto;         
@@ -554,7 +562,7 @@ body {
 }
 
 .ms-how-it-works h2 {
-    font-size: 43px;
+    font-size: 83px;
     font-weight: 500;
     color: var(--ms-dark);
     line-height: 1.2;
@@ -592,7 +600,7 @@ body {
     align-items: start;
     padding-left: 0px;
     margin-left: 0px;
-    margin-top: 170px;
+    margin-top: 70px;
     margin-bottom: 170px;
 }
 
@@ -927,6 +935,274 @@ body {
     }
 }
 
+
+
+/* ===== WHAT'S INCLUDED SECTION ===== */
+
+
+
+.ms-whats-included {
+    position: relative;
+    padding: 80px 0;
+    overflow: hidden;
+    width: 100%;    
+
+}
+
+
+.ms-bg-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    z-index: 1;
+}
+
+.ms-bg-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ms-container #whatsincluded {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    margin-top: auto;
+    margin-left: 200px;
+    margin-right: 200px;
+    padding: 0 24px;
+}
+
+/* Section Header */
+.ms-section-header {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+.ms-section-header h2 {
+    font-size: 55px;
+    font-weight: 550;
+    color: var(--ms-dark);
+    margin-bottom: 20px;
+}
+
+.ms-explore-link {
+    display: inline-flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 600;
+    color: black;
+    text-decoration: none;
+}
+
+
+
+.ms-icon-circle i {
+    color: white;
+    font-size: 12px;
+}
+
+/* Pill Navigation */
+.ms-pill-nav {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.ms-pill {
+    padding: 8px 16px;
+    background: none;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.ms-pill.active {
+    background-color: black;
+    color: white;
+    border-color: black;
+}
+
+/* Grid Layout */
+.ms-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+    padding: 120px;
+}
+/* PROMO CARD */
+.ms-promo-card {
+    position: relative;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    width: 300px;     /* o ajustalo a lo necesario */
+    font-family: sans-serif;
+    transition: transform 0.3s ease;
+
+  }
+  
+  /* IMAGEN */
+  .ms-promo-image {
+    position: relative;
+    height: 700px;
+  }
+  
+  .ms-promo-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  
+  /* DEGRADADO SOBRE LA IMAGEN */
+  .ms-promo-image::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom,
+                rgba(255,255,255,0) 0%,
+                rgba(255,255,255,0.3) 50%,
+                rgba(255,255,255,1) 100%);
+  }
+  
+.ms-promo-content {
+    padding: 30px;
+}
+
+
+.ms-promo-card:hover {
+    background-color: rgba(0, 103, 184, 0.1);
+    transition: background-color 0.5s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transform: translateY(-10px);
+
+}
+.ms-promo-content h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: var(--ms-dark);
+}
+
+.ms-promo-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--ms-gray);
+    margin-bottom: 20px;
+}
+
+/* App Grid */
+.ms-app-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.ms-app-card {
+    background-color: white;
+    border-radius: 25px;
+    padding: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 350px;   
+    height: 290px; 
+}
+
+.ms-app-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.ms-app-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+}
+
+.ms-app-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.ms-app-card h4 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: var(--ms-dark);
+}
+
+.ms-app-card p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--ms-gray);
+    margin-bottom: 15px;
+}
+
+.ms-learn-more {
+    font-size: 14px;
+    font-weight: 600;
+    color: black;
+    text-decoration: none;
+}
+
+.ms-learn-more::after {
+    content: "→";
+    margin-left: 5px;
+    transition: transform 0.3s ease;
+}
+
+.ms-learn-more:hover::after {
+    transform: translateX(3px);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1200px) {
+    .ms-grid-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .ms-app-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .ms-app-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .ms-section-header h2 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .ms-app-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .ms-section-header h2 {
+        font-size: 24px;
+    }
+    
+    .ms-promo-content {
+        padding: 20px;
+    }
+    
+    .ms-promo-content h3 {
+        font-size: 20px;
+    }
+}
 
 /* ===== PRODUCTS SECTION ===== */
 
