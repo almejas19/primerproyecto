@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }
 
+
 :root {
     --ms-blue: #0067b8;
     --ms-blue-dark: #005da6;
@@ -204,7 +205,7 @@ body {
 .ms-hero {
     padding: 80px 0;
     position: relative;
-    min-height: 100vh;
+    min-height: 70vh;
     display: flex;
     align-items: center;
 }
@@ -400,8 +401,8 @@ body {
 /* ===== SECONDARY NAVIGATION BAR ===== */
 
 .ms-secondary-nav {
-    padding-left: 325px;
-    padding-right: 350px;
+    padding-left: 275px;
+    padding-right: 265px;
     background-color: var(--ms-white);
     border-bottom: 1px solid #e6e6e6;
     position: sticky;
@@ -427,7 +428,7 @@ body {
 
 .ms-secondary-nav-links {
     display: flex;
-    gap: 24px;
+    gap: 40px;
     height: 100%;
 }
 
@@ -507,16 +508,15 @@ body {
         font-size: 13px;
     }
 }
+
+
 /* ===== HOW IT WORKS SECTION ===== */
 .ms-how-it-works {
-    margin-left: 250px;
-    padding-left: 90px;
-    padding-right: 20px;
-
-    padding: 80px;
+    padding: 0px 0;
     background-color: var(--ms-white);
-    justify-content: center;
-    align-items: center;
+    max-width: 1355px;      
+    margin: 0 auto;         
+    width: 100%;             
 }
 
 .ms-container {
@@ -528,7 +528,7 @@ body {
 
 .ms-content-container {
     display: flex;
-    gap: 60px;
+    gap: 100px;
     align-items: flex-start; /* Alinea los items en la parte superior */
 }
 
@@ -536,6 +536,7 @@ body {
 .ms-text-content {
     flex: 1;
     max-width: 25%;
+
 }
 
 .ms-section-header {
@@ -591,7 +592,8 @@ body {
     align-items: start;
     padding-left: 0px;
     margin-left: 0px;
-    margin-top: 250px;
+    margin-top: 170px;
+    margin-bottom: 170px;
 }
 
 .ms-icon-circle {
@@ -613,7 +615,7 @@ body {
 .ms-learn-more span {
     font-size: 14px;
     font-weight: 600;
-    color: var(--ms-blue);
+    color: black;
 }
 
 /* Image - Right Side */
@@ -625,11 +627,16 @@ body {
 
 .ms-image-placeholder img {
     width: 100%;
-    max-width: 750px;
+    max-width: 850px; /* Ancho máximo para la imagen */
     height: auto;
     border-radius: 22px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 
+}
+
+.ms-image-placeholder img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
 }
 
 /* Responsive */
@@ -703,6 +710,223 @@ body {
     padding-bottom: 0;
     margin-bottom: 0;
 }
+
+
+
+/*termina el how it works section*/
+
+/* ===== FEATURED NEWS SECTION ===== */
+.ms-featured-news {
+    padding: 80px 0;
+    background-color: var(--ms-white);
+    max-width: 1355px; /* Añade esto para control más preciso */
+    margin: 0 auto; /* Centrandoel contenedor */
+    width: 100%; /* he ocupado el 100% hasta el max-width */
+}
+
+.ms-featured-header {
+    text-align: left;
+    margin-bottom: 50px; 
+}
+
+.ms-featured-header h2 {
+    font-size: 46px;
+    font-weight: 500;
+    color: var(--ms-dark);
+    margin-top: 15px;
+}
+
+/* Featured Card Styles */
+.ms-featured-card {
+    display: flex;
+    gap: 40px;
+    padding: 8px;
+    margin-bottom: 60px;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+
+.ms-featured-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.ms-featured-image {
+    order: 2;
+    flex: 1;
+    min-width: 50%;
+}
+
+.ms-featured-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+    border-radius: 20px;
+}
+
+.ms-featured-content {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.ms-featured-content h3 {
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--ms-dark);
+    margin: 15px 0;
+}
+
+.ms-featured-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--ms-gray);
+    margin-bottom: 25px;
+}
+
+/* News Grid Styles */
+.ms-news-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.ms-news-card {
+    background-color: white;
+    border-radius: 18px;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ms-news-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.ms-card-image {
+    height: 200px;
+    overflow: hidden;
+}
+
+.ms-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.ms-news-card:hover .ms-card-image img {
+    transform: scale(1.05);
+}
+
+.ms-card-content {
+    padding: 25px;
+}
+
+.ms-card-label {
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+.ms-news-card h4 {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--ms-dark);
+    margin: 10px 0;
+}
+
+.ms-news-card p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--ms-gray);
+    margin-bottom: 20px;
+}
+
+/* Button Styles */
+.btn-primary {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border-radius: 6px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    
+}
+
+.ms-featured-content .btn-primary {
+    margin-top: auto;  
+    align-self: flex-start;  
+}
+.btn-primary:hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transform: scale(1.05);
+    background-color: #333;
+    
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1200px) {
+    .ms-news-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .ms-featured-card {
+        flex-direction: column;
+    }
+    
+    .ms-featured-image {
+        height: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .ms-news-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .ms-featured-header h2 {
+        font-size: 28px;
+    }
+    
+    .ms-featured-content h3 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .ms-featured-news {
+        padding: 60px 0;
+    }
+    
+    .ms-featured-header h2 {
+        font-size: 24px;
+    }
+    
+    .ms-featured-content {
+        padding: 25px;
+    }
+    
+    .ms-featured-content h3 {
+        font-size: 20px;
+    }
+}
+
 
 /* ===== PRODUCTS SECTION ===== */
 
