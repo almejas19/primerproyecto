@@ -1247,6 +1247,7 @@ body {
   }
   
   .services-grid {
+    background-color: white;
     display: flex;
     justify-content: center;
     gap: 0;
@@ -1348,87 +1349,237 @@ body {
     max-width: 100%;
   }
 
+
+/* Plans Section */
+.plans-section {
+    width: 100%;
+    height: auto;
+    background-color: #ffffff;
+    padding: 40px 0;
+  }
+  
+  .plans-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .plans-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+  }
+  
+  .plans-text {
+    text-align: left;
+  }
+  
+  .plans-title {
+    font-size: 14px;
+    font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif; 
+    color: #333;
+    margin-bottom: 5px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-left: 0;
+    padding-left: 0;
+  }
+  
+  .plans-subtitle {
+    font-size: 45px;
+    color: black;
+    font-weight: 500;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-left: 0;
+  }
+  
+  .plan-toggle {
+    display: flex;
+    background-color: #f3f3f3;
+    border-radius: 30px;
+    padding: 5px;
+    margin-top: 5px;
+  }
+
+  .toggle-option {
+    padding: 10px 30px;
+    border: none;
+    background: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+  }
+
+  .toggle-option:hover {
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+  }
+  
+  
+  .toggle-option.active {
+    background-color: black;
+    color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+
 /* ===== PRODUCTS SECTION ===== */
 
 
 
-
-
-
-
-
-.ms-products {
-    padding: 60px 0;
+/* Plans Section - Nuevos estilos específicos */
+.ms-plans-section {
+  padding: 60px 0;
+  background-color: #fff;
 }
 
-.ms-products-container {
-    width: 100%;
-    max-width: 1600px;
-    margin: 0 auto;
-    padding: 0 24px;
+.ms-plans-container {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 24px;
 }
 
-.ms-products h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
-    text-align: center;
+.ms-plans-main-title {
+  font-size: 32px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #000;
 }
 
-.ms-product-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-    margin-top: 30px;
+.ms-plans-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
 }
 
-.ms-product-card {
-    border: 1px solid #e6e6e6;
-    border-radius: 4px;
-    overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+.ms-plan-card {
+  border: 1px solid #e6e6e6;
+  border-radius: 8px;
+  padding: 25px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
-.ms-product-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+.ms-plan-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-.ms-product-card img {
-    width: 100%;
-    height: auto;
-    display: block;
+.ms-plan-header {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #f0f0f0;
+  padding-bottom: 15px;
 }
 
-.ms-product-card h3 {
-    font-size: 18px;
-    margin: 15px 15px 5px;
+.ms-plan-title {
+  font-size: 22px;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 10px;
 }
 
-.ms-product-card p {
-    color: var(--ms-gray);
-    margin: 0 15px 15px;
-    font-size: 14px;
+.ms-plan-price {
+  font-size: 28px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 10px;
 }
 
-.ms-product-links {
-    margin: 15px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+.ms-plan-note {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.4;
 }
 
-.ms-product-links a {
-    color: var(--ms-blue);
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    font-size: 14px;
+.ms-plan-features {
+  flex-grow: 1;
+  margin-bottom: 20px;
 }
 
-.ms-product-links a:hover {
-    text-decoration: underline;
+.ms-plan-features-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #000;
 }
+
+.ms-plan-features-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.ms-plan-features-list li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 10px;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #333;
+}
+
+.ms-plan-features-list li:before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #0078d4;
+  font-weight: bold;
+}
+
+.ms-plan-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.ms-plan-button {
+  background-color: #0078d4;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.ms-plan-button:hover {
+  background-color: #106ebe;
+}
+
+.ms-plan-link {
+  color: #0078d4;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  font-size: 15px;
+  transition: color 0.3s ease;
+}
+
+.ms-plan-link:hover {
+  color: #004e8c;
+  text-decoration: underline;
+}
+
+.ms-plan-link i {
+  font-size: 12px;
+}
+
 
 /* ===== FOOTER SECTION ===== */
 .ms-footer {
