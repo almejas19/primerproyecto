@@ -1352,9 +1352,10 @@ body {
 
 /* Plans Section */
 .plans-section {
+    margin-top: 80px;
     width: 100%;
     height: auto;
-    background-color: #ffffff;
+    background-color: transparent;
     padding: 40px 0;
   }
   
@@ -1462,6 +1463,7 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 30px;
+  background-color: white;
 }
 
 .ms-plan-card {
@@ -1536,7 +1538,7 @@ body {
   content: "•";
   position: absolute;
   left: 0;
-  color: #0078d4;
+  color: black;
   font-weight: bold;
 }
 
@@ -1547,7 +1549,7 @@ body {
 }
 
 .ms-plan-button {
-  background-color: #0078d4;
+  background-color: black;
   color: white;
   border: none;
   padding: 12px 20px;
@@ -1559,21 +1561,22 @@ body {
 }
 
 .ms-plan-button:hover {
-  background-color: #106ebe;
+  background-color: gray;
 }
 
 .ms-plan-link {
-  color: #0078d4;
+  color: black;
   font-weight: 600;
   text-align: center;
   text-decoration: none;
   font-size: 15px;
   transition: color 0.3s ease;
+
 }
 
 .ms-plan-link:hover {
-  color: #004e8c;
-  text-decoration: underline;
+    text-decoration: none;
+  color: gray;
 }
 
 .ms-plan-link i {
