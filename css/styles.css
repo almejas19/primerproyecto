@@ -1204,6 +1204,150 @@ body {
     }
 }
 
+
+/* ===== INNOVATE SECTION ===== */
+.innovate-section {
+    padding: 80px 0;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  .innovate-section .container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .explore-text {
+    color: #504d64;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    /* Puedes ajustar este valor para controlar la separación */
+  }
+  
+  .section-title {
+    font-size: 45px;
+    font-weight: 500;
+    color: #000;
+    margin-bottom: 15px;
+    font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  }
+  
+  .section-subtitle {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 50px;
+    max-width: 700px;
+  }
+  
+  .services-grid {
+    display: flex;
+    justify-content: center;
+    gap: 0;
+    padding-bottom: 2px;
+    margin-bottom: 20px;
+    border-radius: 15px; /* Bordes redondeados */
+    border: 1px solid #ddd; /* Borde gris claro */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  }
+  
+  .service-box {
+    justify-content: center;
+    padding: 27px; /* 10% menos que 30px */
+    text-align: center;
+    width: 222px; /* 10% menos que 200px */
+    height: 62px; /* Ajuste proporcional */
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+  }
+  
+  .service-box:hover::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: calc(100% - 3px);  
+    height: 3px;
+    background-color: #004479;
+    border-radius: 0 0 2px 2px;
+    margin: 0 1px; 
+  }
+  
+  .service-box h3 {
+    font-size: 16px; /* Ajustado proporcionalmente */
+    color: #333;
+    margin: 0;
+  }
+  
+  .feature-content {
+    margin-top: 15px;
+    width: 100%;
+  }
+  
+  .feature-title {
+    font-size: 32px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 40px;
+  }
+  
+  .feature-item {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    max-width: 90px;
+    margin: 0 auto;
+  }
+  
+  .feature-text {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .feature-text h3 {
+    font-size: 14px;
+    font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif; 
+    color: #333;
+    margin-bottom: 5px;
+    font-weight: 550;
+    order: 1;
+  }
+  
+  .feature-image {
+    flex: 1;
+  }
+  
+  .feature-image img {
+    width: 25px;
+    height: auto;
+    border-radius: 8px;
+    max-width: 100%;
+    order: 2;
+  }
+  
+  .centered-image {
+    margin-top: 60px;
+    width: 100%;
+    max-width: 800px;
+  }
+  
+  .centered-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    max-width: 100%;
+  }
+
 /* ===== PRODUCTS SECTION ===== */
 
 
